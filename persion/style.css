@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    direction: rtl;
+}
+ul , li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+* , *::after, *::before{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.container{
+    width: 1150px;
+    margin: 0 auto;
+}
+.clearfix::after , .clearfix::before{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.right-header{
+    float: right;       
+}
+.left-header{
+    float: left;     
+}
+.left-header ul li{
+    display:inline-block;  
+    padding: 10px 0;
+}
+
+.right-header a{
+    color: #122a68;
+    display: block;
+    padding: 10px 0;
+}
+.left-header ul li a{
+    color: #3acec3;
+    display: block;
+    padding: 0 15px;
+}
+.left-header ul li a:hover{
+    color: #122a68;
+}
+#header{
+    padding: 15px 0;
+    position: fixed;
+    background: white;
+    top: 0;
+    right: 0;
+    width: 100%;
+    font-weight: bold;
+    z-index: 1;
+}
+#hero-content{
+    text-align: center;
+    background: #3acec3;
+    color: white;
+    padding: 100px 0 50px 0;
+    
+}
+#hero-content img{
+    width: 300px;
+    height: auto;
+}
+#main-menu .list2 img{
+    width: 100%;
+    height: auto;
+}
+.list1 , .list2 , .list3{
+    float: left;
+    width: 33.33%;
+    padding: 20px 30px ;
+}
+#footer{
+    background: #d9e4ea;
+    padding: 10px 0;
+    text-align: center;
+}
+.list2 .sub  {
+    position: relative;
+}
+.list2 .sub-pic{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(26,67,117,.6);
+    color: white;
+    
+
+}
+p.sub-pic2{
+    text-align: center;  
+}
+.sub-pic p{
+    line-height: 1;
+    margin: 6px 0;
+    padding: 0 7px;
+}
+@media only screen and (max-width:1200px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:960px){
+    #main-menu .list3 , #main-menu .list2 {
+        width: 50%;}
+     #main-menu .list1{
+        width: 100%;
+     }
+
+    }
+@media only screen and (max-width:600px){
+        #header .right-header , #header .left-header{
+            float: none;
+            text-align: center;
+        }
+        #main-menu .list1 , #main-menu .list2 , #main-menu .list3{
+            width: 100%;
+        }
+    }
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    direction: ltr;
+}
+ul , li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1150px;
+    margin: 0 auto;
+}
+.clearfix::after , .clearfix::before{
+    content: "";
+    display:table;
+    clear:both;
+}
+* , *::after ,*::before{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -webkit-border-box:box-sizing;
+}
+#header{
+    text-transform:uppercase; 
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index:1;
+}
+#header .right{
+    float: right;
+}
+#header .left{
+    float: left;
+}
+#header .left{
+    color: #122a68;
+}
+#header .right ul li a{
+    color: #3acec3;
+}
+#header .right ul li  :hover{
+    color: #122a68
+}
+#header .right ul li{
+    display: inline-block;
+}
+#header .right ul li a{
+    display: block;
+    padding: 0 5px;
+}
+#hero-part{
+    background: #3acec3;
+    text-transform: capitalize;
+    color: white;
+    padding: 50px 30px 30px 30px;
+    margin: 60px 0;  
+}
+#hero-part ul li img{
+    width: 300px;
+    height: auto;
+}
+#hero-part ul li{
+    text-align: center;
+}
+#hero-part ul li h3{
+    margin:25px 0 10px 0;
+}
+#main-menu .title2 img{
+    width: 100%;
+    height: auto;
+}
+#main-menu .list{
+    float: left;
+    width: 33.33%;
+    padding-right: 60px;
+}
+#footer{
+    background: #d9e4ea;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+.sub-pic{
+    position: relative;
+}
+.sub {
+    position: absolute;
+    bottom: 0;
+    background:rgba(26,67,117,.6);  
+}
+.sub p{
+    margin: 0;
+}
+@media only screen and (max-width:1200px){
+    .container{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:960px){
+    #header .left , #header .right{
+        float: none;
+        text-align: center;
+        padding: 5px 0;
+    }
+    #main-menu .list{
+        width:50%;
+    }
+    #main-menu .list:nth-child(3){
+        width: 100%;
+    }
+}
+@media only screen and (max-width:650px){
+    #main-menu .list{
+        width:100%;
+    }
+}
+
+
+    
+
+
+
